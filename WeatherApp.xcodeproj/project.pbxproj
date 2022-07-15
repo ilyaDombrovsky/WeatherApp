@@ -56,15 +56,39 @@
 		33DA101A28815A7500D25BEB /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				33DA101B28815A7500D25BEB /* AppDelegate.swift */,
-				33DA101D28815A7500D25BEB /* SceneDelegate.swift */,
-				33DA102128815A7500D25BEB /* Main.storyboard */,
-				33DA102F28815B1900D25BEB /* ListTVC.swift */,
-				33DA102428815A7B00D25BEB /* Assets.xcassets */,
-				33DA102628815A7B00D25BEB /* LaunchScreen.storyboard */,
-				33DA102928815A7B00D25BEB /* Info.plist */,
+				33EDC29D2881F504009D041F /* Model */,
+				33EDC29E2881F50F009D041F /* View */,
+				33EDC29F2881F51D009D041F /* Supporting files */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		33EDC29D2881F504009D041F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33EDC29E2881F50F009D041F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33DA102F28815B1900D25BEB /* ListTVC.swift */,
+				33DA102128815A7500D25BEB /* Main.storyboard */,
+				33DA102628815A7B00D25BEB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33EDC29F2881F51D009D041F /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				33DA101B28815A7500D25BEB /* AppDelegate.swift */,
+				33DA101D28815A7500D25BEB /* SceneDelegate.swift */,
+				33DA102428815A7B00D25BEB /* Assets.xcassets */,
+				33DA102928815A7B00D25BEB /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JK7VYC93Q8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = "WeatherApp/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JK7VYC93Q8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = "WeatherApp/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
