@@ -14,7 +14,7 @@ class ListTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        netwokWeatherManager.fetchWeather() 
+         netwokWeatherManager.fetchWeather() 
     }
     
   
