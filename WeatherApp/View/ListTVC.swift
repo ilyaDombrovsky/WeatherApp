@@ -8,28 +8,16 @@
 import UIKit
 
 class ListTVC: UITableViewController {
+    
+    let netwokWeatherManager =  NetworkWeatherManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchWeather()
-
+       
+        netwokWeatherManager.fetchWeather() 
     }
     
-    func fetchWeather() {
-        let urlString = "https://api.weather.yandex.ru/v2/forecast?lat=53.900645&lon=27.560120"
-        guard let url = URL(string: urlString) else { return }
-        var request = URLRequest(url: url, timeoutInterval: Double.infinity)
-        request.addValue("fe8ee570-ccdd-467c-a1fa-8e04ea6e99b0", forHTTPHeaderField: "X-Yandex-API-Key")
-        request.httpMethod = "GET"
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let data = data else {
-                print(String(describing: error))
-                return
-            }
-            print(String(data: data, encoding: .utf8)!)
-        }
-        task.resume()
-    }
+  
 
     // MARK: - Table view data source
 
